@@ -1,0 +1,37 @@
+1. All routers must be set with hostname as per the names in the workspace 
+
+
+2. In all the LAN connections the routers must be set with the last valid HostID as per the subnet. Switches must be set with the second last usable address.
+
+LAN 1 
+192.168.10.0 /26
+255.255.255.192---INCREMENT 64
+
+LAN 2
+192.168.10.64 /26
+
+LAN 3
+192.168.10.128 /26
+
+LAN 4
+192.168.10.192 /26
+
+3. All routers and switches must be set with username 'admin' and secret password 'ccna'
+
+4. All routers and switches must be enabled with remote access using secure shell
+
+5. All devices must be set with secret enable 'cisco'
+
+6. All routers must be set with EIGRP routing protocol. Each LAN must belong to a different AS 10,20,30,40. Redistribution must be set in the Core router
+
+7. History size on all devices must be set to 5 and idle timer must be set to 5 minutes
+
+8. Set login banners on all routers and switches.
+"Unauthorized access is prohibited "
+
+9. All switches must be set with port security allowing only one MAC address in access ports.
+
+10. All router serial connection must be set to use PPP protocol.
+
+CCNACOURSE2019@GMAIL.COM
+support@broadwayinfosys.com
